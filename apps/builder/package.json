@@ -8,11 +8,10 @@
     "test": "dotenv -e ./.env -e ../../.env -- playwright test",
     "test:show-report": "playwright show-report src/test/reporters",
     "test:ui": "dotenv -e ./.env -e ../../.env -- playwright test --ui"
+    "build": "next build",
+    "postinstall": "prisma migrate deploy"
   },
-  "scripts": {
-  "build": "next build",
-  "postinstall": "prisma migrate deploy"
-},
+
   "dependencies": {
     "partysocket": "1.0.2",
     "@braintree/sanitize-url": "7.0.1",
